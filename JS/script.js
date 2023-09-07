@@ -35,10 +35,12 @@ if (anniPasseggero <= 18) {
   costo = (costo - (costo * 40 / 100));
 } else;
 
+const messaggio = `Il prezzo del tuo biglietto è di: €${costo}`;
 
-
-console.log(costo);
+console.log(messaggio);
   
 
 // 4 
+
+messaggio = document.getElementById('output');
 
