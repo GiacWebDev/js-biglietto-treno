@@ -9,9 +9,8 @@
 
 // 1. Creare varianti per numeroKilometri e anniPasseggero
 // 2. creare variante per prezzo standart prezzoBiglietto
-// 3. creare condizionali dove marginare da 0 a 18 anni e dare variante
-// 4. creare condizionali dove marginare da 65 a nolimit e dare variante
-// 5. attribuire alle varianti età lo sconto rispettivo
+// 3. creare condizionali dove marginare da 0 a 18 anni + 65 a nolimit + messaggio
+// 4. stampa in pagina
 
 
 // 1.
@@ -30,7 +29,16 @@ console.log(costo);
 
 // 3
 
-if (anniPasseggero < 18) { anniPasseggero = minorenne }
-   
+if (anniPasseggero <= 18) {
+  costo = (costo - (costo * 20 / 100));
+} else if (anniPasseggero >= 65) {
+  costo = (costo - (costo * 40 / 100));
+} else;
 
+
+
+console.log(costo);
+  
+
+// 4 
 
