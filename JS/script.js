@@ -30,5 +30,7 @@ console.log(costo);
 
 // 3
 
+if (anniPasseggero < 18) { anniPasseggero = minorenne }
+   
 
 
