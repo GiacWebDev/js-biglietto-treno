@@ -8,8 +8,8 @@
 
 
 // 1. Creare varianti per numeroKilometri e anniPasseggero
-// 2. creare variante per prezzo standart prezzoBiglietto
-// 3. creare condizionali dove marginare da 0 a 18 anni + 65 a nolimit + messaggio
+// 2. creare variante per prezzo standard prezzoBiglietto
+// 3. creare condizionali dove marginare da 0 a 18 anni e 65+ a nolimit + messaggio
 // 4. stampa in pagina
 
 
@@ -42,5 +42,5 @@ console.log(messaggio);
 
 // 4 
 
-messaggio = document.getElementById('output');
+document.getElementById('output').innerHTML = messaggio
 
