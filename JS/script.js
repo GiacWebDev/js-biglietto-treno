@@ -30,12 +30,12 @@ console.log(costo);
 // 3
 
 if (anniPasseggero <= 18) {
-  costo = Math.round(costo - (costo * 20 / 100));
+  costo = (costo - (costo * 20 / 100));
 } else if (anniPasseggero >= 65) {
-  costo = Math.round(costo - (costo * 40 / 100));
+  costo = (costo - (costo * 40 / 100));
 }
 
-const messaggio = `Il prezzo del tuo biglietto è di: €${costo}`;
+const messaggio = `Il prezzo del tuo biglietto è di: &euro; ${costo.toFixed(2)}`;
 
 console.log(messaggio);
   
